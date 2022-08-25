@@ -1,0 +1,47 @@
+.header{
+    font-size: 0.95em;
+    font-weight: 550;
+    margin:0 1em;
+    line-height: 1.2%;
+    background-color: #ff6600; /*#f6f6ef*/
+    color: black;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5em;
+    
+}
+
+h2{
+    margin-left: 0.3;
+    padding-left: 0.3em;
+    font-size: 0.95em;
+}
+
+.logo{
+    align-self: center;
+    display: block;
+    width: 20px;
+    height: 21px;
+}
+
+.center > li{
+    padding-left: 0.5em;
+    display: inline-block;
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.right{   
+    list-style: none;
+    /* align-self: flex-end; */
+}
+
+.right>li{
+    align-self: flex-end;
+}
