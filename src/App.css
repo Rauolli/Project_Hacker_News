@@ -1,9 +1,9 @@
 .App {
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   background-color: #828282;
 }
 
 .table-row {
-  text-align: left;
+  text-align: start;
 }

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Header from "./Components/Header";
 
 export default function App() {
   const [news, setNews] = useState([]);
@@ -18,8 +19,8 @@ export default function App() {
   console.log(searchWord);
 
   function checkUserInput(e) {
-    e.preventDefault();
-    setSearchWord(document.getElementById("input").value);
+	e.preventDefault();
+	setSearchWord(document.getElementById("input").value);
 	}
 	function shortUrl (url) {
 		if (url) {
@@ -29,6 +30,7 @@ export default function App() {
 
 		}
 	}
+
 	function showAllMessages(n){
 		//console.log(n);
 		let news = [];
@@ -41,9 +43,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <input name="input" id="input" type="text" />
-      <button onClick={checkUserInput}>Search</button>
+		<div className="flex-row">	
+      		<Header />
+			<input name="input" id="input" type="text" />
+            <button onClick={checkUserInput}>Search</button>
+	  	</div>
 			<hr/>
 			<ol className="table-row">
       {news.map((nachricht) => ( 
