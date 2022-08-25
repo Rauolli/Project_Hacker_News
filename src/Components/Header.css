@@ -1,6 +1,6 @@
 .header{
     font-size: 0.95em;
-    font-weight: 550;
+    font-weight: 500;
     margin:0 1em;
     line-height: 1.2%;
     background-color: #ff6600; /*#f6f6ef*/
@@ -14,9 +14,9 @@
 }
 
 h2{
-    margin-left: 0.3;
+    margin-left: 0.3em;
     padding-left: 0.3em;
-    font-size: 0.95em;
+    font-size: 1.1em;
 }
 
 .logo{
