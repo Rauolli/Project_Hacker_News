@@ -6,9 +6,7 @@
     background-color: #ff6600; /*#f6f6ef*/
     color: black;
     display: flex;
-    /* justify-content: flex-start; */
-    align-items: center;
-    flex-direction: row;
+    justify-content: space-between;
     gap: 0.5em;
     
 }
@@ -36,12 +34,12 @@ a{
     color: black;
     text-decoration: none;
 }
-
+.left { display: flex; }
 .right{   
     list-style: none;
-    /* align-self: flex-end; */
+    margin-right: 4px;
 }
 
 .right>li{
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
