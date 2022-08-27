@@ -1,11 +1,11 @@
 import Line from "./Line";
 
-const Main = (news) =>{
-    
+const Main = (props) =>{
+    const nachrichten = props.news;
     return (
-        <main>
+        <main className="main">
             <ol className="table-row">
-      			{Object.getOwnPropertyNames(news).map((nachricht) => ( 
+      			{nachrichten.map((nachricht) => ( 
         
 					<>					
 						{/* {<p>{nachricht[searchWord]?nachricht[searchWord]: ''}</p>} */}
