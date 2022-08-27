@@ -55,7 +55,7 @@ const Line = ({ title, created_at, url, points, author, num_comments}) =>{
     return(
         <>
             {title && created_at?
-            <li><a href={url}>{title}</a> <a href={url}>{shortUrl(url)}</a>
+            <li><span className="gray bigger">&#x25B4;</span><a href={url}>{title}</a> <a href={url}>{shortUrl(url)}</a>
             <br /><span className="small">{points} points {author} {calculateDateDiff(created_at)} | hide | {num_comments}  Comments</span></li>:''}
         </>
     ); 

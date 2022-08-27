@@ -13,6 +13,7 @@ const Main = (props) =>{
 					</>
 			))}			
 			</ol>
+			<a href="news?p=2" className="morelink" rel="next">More</a>
         </main>
     );
 }

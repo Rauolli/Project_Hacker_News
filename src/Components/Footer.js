@@ -12,23 +12,24 @@ const Footer = ()=>{
             <h3><a href="https://www.ycombinator.com/apply/">Applications are open for YC Winter 2023</a></h3>
             <nav>
                 <ul>
-                    <li>Guidelines</li>
+                    <li><a href="newsguidelines.html">Guidelines</a></li>
                     <li>|</li>
-                    <li>FAQ</li>
+                    <li><a href="newsfaq.html">FAQ</a></li>
                     <li>|</li>
-                    <li>Lists</li>
+                    <li><a href="lists">Lists</a></li>
                     <li>|</li>
-                    <li>API</li>
+                    <li><a href="https://github.com/HackerNews/API">API</a></li>
                     <li>|</li>
-                    <li>Security</li>
+                    <li><a href="security.html">Security</a></li>
                     <li>|</li>
-                    <li>Legal</li>
+                    <li><a href="http://www.ycombinator.com/legal/">Legal</a></li>
                     <li>|</li>
-                    <li>Apply to YC</li>
+                    <li><a href="http://www.ycombinator.com/apply/">Apply to YC</a></li>
                     <li>|</li>
-                    <li>Contact</li>
+                    <li><a href="mailto:hn@ycombinator.com">Contact</a></li>
                 </ul>
-            	<button onClick={checkUserInput}>Search</button>
+            	{/* <button onClick={checkUserInput}>Search</button> */}
+                <label className="gray smaller">Search: </label>
                 <input name="input" id="input" type="text" />
             </nav>   
         </footer>
