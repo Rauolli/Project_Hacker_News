@@ -1,14 +1,62 @@
 .App {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  background-color: #f6f6ef;;
+  /* text-align: center; */
+  background-color: #f6f6ef;
+  max-width: 90vw;
+  min-height: 101vh;
+  margin-left: 5%;
+}
+
+.main{
+  font-size: 0.9em;
 }
 
 .table-row {
   text-align: start;
 }
 
+.table-row>li::marker{
+  color: gray;
+  font-size: 0.87em;
+}
+.gray{
+  color: gray;
+}
+
 .small{
   color: gray;
   font-size: 0.8em;
 }
+
+.smaller{
+  font-size: 0.8em;
+}
+
+.bigger{
+  font-size: 1.2em;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 1em;
+  border-top: 3px solid #ff6600;
+}
+
+
+.footer li{
+  display: inline-block;
+  list-style: none;
+  font-size: 0.7em;
+  padding-right: 0.4em;
+}
+
+.footer h3>a{  
+  font-size: 0.8em;
+  font-weight: 100;
+  color: rgb(83, 83, 83);
+}
+
+.App .morelink{
+  margin-left: 2.7em;
+}
+

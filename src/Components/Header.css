@@ -1,9 +1,9 @@
 .header{
     font-size: 0.95em;
     font-weight: 500;
-    margin:0 1em;
+    /* margin:0 1em; */
     line-height: 1.2%;
-    background-color: #ff6600; /*#f6f6ef*/
+    background-color: #ff6600; 
     color: black;
     display: flex;
     justify-content: space-between;
@@ -12,12 +12,14 @@
 }
 
 h2{
-    margin-left: 0.3em;
+    /* margin-left: 0.3em; */
     padding-left: 0.3em;
-    font-size: 1.1em;
+    font-size: 1em;
+    align-self: center;
 }
 
 .logo{
+    padding-left: 0.2em;
     align-self: center;
     display: block;
     width: 20px;

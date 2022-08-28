@@ -1,5 +1,5 @@
 import "./Header.css";
-import logo from "../img/hacker-newsY.gif";
+import logo from "../img/hacker-newsY.png";
 
 export default function Header(){
     
