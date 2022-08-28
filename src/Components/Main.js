@@ -2,14 +2,14 @@ import Line from "./Line";
 
 const Main = (props) =>{
     const nachrichten = props.news;
+	const word = props.word;
     return (
         <main className="main">
             <ol className="table-row">
       			{nachrichten.map((nachricht) => ( 
         
 					<>					
-						{/* {<p>{nachricht[searchWord]?nachricht[searchWord]: ''}</p>} */}
-						<Line key={crypto.randomUUID()} {...nachricht} />	
+						<Line key={crypto.randomUUID()} {...nachricht} word={word}/>	
 					</>
 			))}			
 			</ol>

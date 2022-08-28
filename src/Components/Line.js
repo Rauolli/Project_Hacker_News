@@ -1,6 +1,6 @@
 
+const Line = ({ word, title, created_at, url, points, author, num_comments}) =>{
 
-const Line = ({ title, created_at, url, points, author, num_comments}) =>{
     function shortUrl (url) {
 		if (url) {
 			let parts = url.split("//");
@@ -52,11 +52,36 @@ const Line = ({ title, created_at, url, points, author, num_comments}) =>{
 		return `${yearDiff} years, ${monthDiff} months, ${dayDiff} days, ${hourDiff} hours ago`;
 	}
 
+	function seachWordList(w){
+		let line = '';
+		switch (w) {
+			case 'author':
+				line = ` Author: ${author} `;
+				break;
+			case 'created_at':
+				line = ` Created at: ${new Date(created_at).toLocaleDateString()} `;
+				break;
+			case 'points':
+				line = ` Points: ${points} `;
+				break;
+			case 'title':
+				line = `Titel: `;
+				break;
+			case 'url':
+				line = ` URL: ${shortUrl(url)} `;
+				break;
+			default:				 
+				break;		
+		}
+		return line;
+	}
+
     return(
-        <>
-            {title && created_at?
-            <li><span className="gray bigger">&#x25B4;</span><a href={url}>{title}</a> <a href={url}>{shortUrl(url)}</a>
-            <br /><span className="small">{points} points {author} {calculateDateDiff(created_at)} | hide | {num_comments}  Comments</span></li>:''}
+        <>			
+            {title && created_at?  
+		 <li><span className="gray bigger">&#x25B4;</span>{seachWordList(word)}<a href={url}>{title}</a> <a href={url}>{shortUrl(url)}</a>
+			<br /><span className="small">{points} points {author} {calculateDateDiff(created_at)} | hide | {num_comments}  Comments</span></li> : ''
+			}           
         </>
     ); 
 };
